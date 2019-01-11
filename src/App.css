@@ -1,0 +1,54 @@
+body {
+  max-width: 1280px; }
+
+section {
+  height: 600px; }
+
+.splashWrapper {
+  width: 100%;
+  height: auto;
+  display: flex; }
+
+.mask {
+  width: 50%;
+  height: 600px;
+  background-color: #0000008f; }
+
+.leftSplash {
+  background-color: red;
+  width: 45%;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  overflow: hidden;
+  background-position: right;
+  background-size: cover; }
+
+.splashText {
+  position: fixed;
+  color: pink;
+  height: 600px;
+  width: 45%; }
+
+.rightBlock {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.rightSplash {
+  width: 60%;
+  height: auto; }
+
+.blockText {
+  font-size: 6em; }
+
+svg {
+  width: 100%;
+  height: 100%; }
+
+line {
+  stroke: #f2dede;
+  stroke-width: 1; }
+
+/*# sourceMappingURL=App.css.map */
