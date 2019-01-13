@@ -17,25 +17,32 @@ class Splash extends Component {
 
     return (
       <section>
-        <div className="splashWrapper wrapper">
-          <div className='mask'>
-            <div className="leftSplash" style={backgroundL}>
-              <svg >
-                <line x1="0" y1="100%" x2="100%" y2="0"/>
-              </svg>
+        <div className="splashWrapper">
+          <div className="leftSplash" style={backgroundL}>
+
+          <svg >
+            <line x1="0" y1="100%" x2="100%" y2="0"/>
+          </svg>
+
+            <div className='textWrapper'>
+              <div className='leftText'>
+                <h1 className='headerText'>UI/UX</h1>
+              </div>
+
+              <div className='rightText'>
+                <h1 className='headerText'>DEV</h1>
+              </div>
+
             </div>
+
+
+
           </div>
-          <div className="splashText">
-            <div className='leftBlock'>
-              <h1 className="blockText">UI/UX</h1>
-            </div>
-            <div className='rightBlock'>
-              <h1 className="blockText">DEV</h1>
-            </div>
+          <div className="rightSplash" style={backgroundR}>
+          </div>
+
         </div>
 
-        <div className="rightSplash"></div>
-        </div>
       </section>
     );
   }
