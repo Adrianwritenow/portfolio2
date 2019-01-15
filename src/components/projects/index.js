@@ -18,6 +18,7 @@ class Projects extends Component {
     return (
       <section>
         <div className="projectWrapper" >
+        <div className='projectBg' style={background}></div>
           <div className='projectMask'>
             <div className='demoView'>
               <img src='images/Real.png' alt='demo'/>

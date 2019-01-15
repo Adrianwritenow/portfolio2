@@ -18,7 +18,12 @@ class Review extends Component {
     return (
       <section>
         <div className="reviewWrapper" >
+        <div className='projectBg' style={background}></div>
+
           <div className='reviewMask'>
+
+          <div className='reviewBox'>
+          </div>
           </div>
         </div>
 

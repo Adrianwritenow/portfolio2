@@ -10,7 +10,7 @@ class Contact extends Component {
 
   render() {
     const background = {
-      backgroundImage: 'url(images/texture3.png)'
+      backgroundImage: 'url(images/pool_water.jpg)'
     }
 
 
@@ -18,6 +18,8 @@ class Contact extends Component {
     return (
       <section>
         <div className="contactWrapper" >
+        <div className='projectBg' style={background}></div>
+
           <div className='contactMask'>
             <div className='leftSide'>
 

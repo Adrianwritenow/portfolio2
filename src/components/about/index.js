@@ -11,7 +11,7 @@ class About extends Component {
 
   render() {
     const background = {
-      backgroundImage: 'url(images/multiTexture.png)'
+      backgroundImage: 'url(images/pool_water.jpg)'
     }
 
 
@@ -20,7 +20,9 @@ class About extends Component {
       <section>
 
 
-          <div className="aboutWrapper" >
+          <div className="aboutWrapper">
+          <div className='projectBg' style={background}></div>
+
             <div className='aboutMask'>
               <div className="contentWrapper">
                 <div className='blocText'>
