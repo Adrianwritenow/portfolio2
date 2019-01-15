@@ -1,7 +1,22 @@
+.App{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  flex-wrap: wrap;
+
+}
+
 section{
   width:100vw;
   height:100vh;
-  background-color: black;
+  max-width: 1280px;
+  overflow: hidden;
+}
+h4{
+  font-size: 2.65em;
+  color:#239ABC;
+  font-weight: 100;
+  letter-spacing: 6.95px;
 }
 
 .splashWrapper{
@@ -26,6 +41,44 @@ section{
   background-color: green;
   background-size: cover;
     background-position: bottom;
+    display: flex;
+    align-items: center;
+
+    .titleCard{
+      text-align: center;
+      width: 100%;
+      position: relative;
+      float: left;
+      padding: 0 10px;
+      background-color: #5a5353bd;
+      padding: 30px;
+
+        h4{
+          font-size: 25px;
+          letter-spacing: 8.03px;
+          color: #F4E2E7;
+        }
+    }
+
+    .titleCard:before{
+      content: "";
+      background: #F4E2E7;
+      position: absolute;
+      left: 22.5%;
+      height: 1px;
+      width: 55%;
+      right: 22.5%;
+    }
+
+    .titleCard:after{
+      content: "";
+      background: #F4E2E7;
+      position: absolute;
+      left: 22.5%;
+      height: 1px;
+      width: 55%;
+      right: 22.5%;
+    }
 
 }
 
@@ -33,6 +86,8 @@ section{
   height: 50%;
   margin: 0 auto;
   position: relative;
+  margin-right: 20px;
+
   h1{
     position: absolute;
   right: 0;
@@ -42,10 +97,13 @@ section{
 
 .leftText{
   height: 50%;
+  margin-left: 20px;
 }
 .headerText{
   font-size: 8em;
   color: pink;
+  font-family: Archivo;
+  letter-spacing: 9.98px;
 }
 
 .textWrapper{
@@ -53,7 +111,239 @@ section{
     position: absolute;
     top: 0;
     width: 100%;
+    background-color: #000000b8;
 }
 
+.devSubTxt{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top:0;
+  font-family: Montserrat;
+  margin-right: 20px;
+  margin-top: 60px;
+
+
+}
+
+.uiSubTxt{
+  font-family: Montserrat;
+
+}
+
+
 svg{width: 100%; height: 100%;}
-line{stroke:#f2dede;stroke-width:1}
+line{stroke:#f2dede;stroke-width:2px}
+
+
+
+// ABOUT
+.aboutWrapper{
+  width:100%;
+  height:100%;
+
+  .aboutMask{
+    width:100%;
+    height:100%;
+
+  }
+
+  .contentWrapper{
+    color: #F50006;
+
+    .blocText{
+      width: 43%;
+      display: flex;
+      float: left;
+      h1{
+        font-family: Archivo;
+        font-weight: regular;
+        font-size: 86px;
+        padding:30px;
+        letter-spacing:14.66px;
+      }
+    }
+    p{
+      font-size: 30px;
+      padding-top: 2%;
+      font-family: Montserrat;
+      letter-spacing: 8.03px;
+      line-height: 52px;
+      width: 95%;
+    }
+  }
+}
+
+///Projects
+
+.projectWrapper{
+  width:100%;
+  height:100%;
+
+  .projectMask{
+    width:100%;
+    height:100%;
+    display: flex;
+
+    img{
+          max-width: 40vw;
+    }
+
+    .demoView{
+      position: absolute;
+      z-index: 0;
+      margin-top:5%;
+      margin-left: 30px;
+    }
+
+    .contentWrapper{
+    position: absolute;
+    right: 10%;
+    color:#EFB808;
+
+    p{
+      font-family: Montserrat;
+      letter-spacing: 13.36px;
+      line-height: 40px;
+      font-size: 20px;
+
+      .boldTxt{
+        font-weight: bold;
+
+      }
+    }
+  }
+
+  .blocText{
+    position: relative;
+    margin-top: 10%;
+
+    .equal{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-family: Montserrat;
+      font-size: 30px;
+
+    }
+    h1{
+      font-size: 120px;
+      display: flex;
+      align-items: center;
+      letter-spacing:14.66px;
+      font-family: Archivo;
+      font-weight: regular;
+      span{
+        font-size: 30px;
+        letter-spacing:13.66px;
+        font-family: Montserrat;
+
+      }
+    }
+  }
+
+  }
+}
+
+
+///Contact
+
+.contactWrapper{
+  width: 100%;
+  height:100%;
+  color:#084C61;
+
+  .contactMask{
+    width: 100%;
+    height:100%;
+    display: flex;
+
+
+    .leftSide{
+      width: 55%;
+      height:100%;
+      position: relative;
+
+      h1{
+        font-family: Archivo;
+        font-weight: regular;
+        font-size: 200px;
+        letter-spacing: 25.21px;
+      }
+      .socialList{
+        color:#36151E;
+
+        span{
+          font-weight: bold;
+        }
+      }
+
+      p{
+        font-family: Montserrat;
+        font-weight:regular;
+        letter-spacing: 13.36px;
+        font-size: 30px;
+        width: 90%;
+      }
+    }
+
+    .rightSide{
+      width:45%;
+      height:100%;
+      position: relative;
+
+      form{
+        width:85%;
+        letter-spacing: 13.36px;
+        font-size:20px;
+        position: absolute;
+        bottom:25%;
+        font-family: Montserrat;
+        color: #36151E;
+
+        input{
+          width: 100%;
+          border: none;
+          background-color: #deb88700;
+          border-bottom: 1px solid #084C61;
+          text-align: end;
+          letter-spacing: 13.36px;
+          height: 50px;
+
+        }
+
+        textarea{
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          width: 100%;
+          height: 150px;
+          background-color: #00ffff00;
+          border: none;
+          border-bottom: 1px solid #084C61;
+          text-align: end;
+          letter-spacing: 13.36px;
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+// REVIEWS //
+
+.reviewWrapper{
+  width: 100%;
+  height:100%;
+
+    .reviewMask{
+      width: 100%;
+      height:100%;
+
+
+    }
+}

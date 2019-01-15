@@ -1,7 +1,20 @@
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  flex-wrap: wrap; }
+
 section {
   width: 100vw;
   height: 100vh;
-  background-color: black; }
+  max-width: 1280px;
+  overflow: hidden; }
+
+h4 {
+  font-size: 2.65em;
+  color: #239ABC;
+  font-weight: 100;
+  letter-spacing: 6.95px; }
 
 .splashWrapper {
   width: 100%;
@@ -23,29 +36,76 @@ section {
   height: 100%;
   background-color: green;
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  display: flex;
+  align-items: center; }
+  .rightSplash .titleCard {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 0 10px;
+    background-color: #5a5353bd;
+    padding: 30px; }
+    .rightSplash .titleCard h4 {
+      font-size: 25px;
+      letter-spacing: 8.03px;
+      color: #F4E2E7; }
+  .rightSplash .titleCard:before {
+    content: "";
+    background: #F4E2E7;
+    position: absolute;
+    left: 22.5%;
+    height: 1px;
+    width: 55%;
+    right: 22.5%; }
+  .rightSplash .titleCard:after {
+    content: "";
+    background: #F4E2E7;
+    position: absolute;
+    left: 22.5%;
+    height: 1px;
+    width: 55%;
+    right: 22.5%; }
 
 .rightText {
   height: 50%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  margin-right: 20px; }
   .rightText h1 {
     position: absolute;
     right: 0;
     bottom: 0; }
 
 .leftText {
-  height: 50%; }
+  height: 50%;
+  margin-left: 20px; }
 
 .headerText {
   font-size: 8em;
-  color: pink; }
+  color: pink;
+  font-family: Archivo;
+  letter-spacing: 9.98px; }
 
 .textWrapper {
   height: 100%;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #000000b8; }
+
+.devSubTxt {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: Montserrat;
+  margin-right: 20px;
+  margin-top: 60px; }
+
+.uiSubTxt {
+  font-family: Montserrat; }
 
 svg {
   width: 100%;
@@ -53,6 +113,144 @@ svg {
 
 line {
   stroke: #f2dede;
-  stroke-width: 1; }
+  stroke-width: 2px; }
+
+.aboutWrapper {
+  width: 100%;
+  height: 100%; }
+  .aboutWrapper .aboutMask {
+    width: 100%;
+    height: 100%; }
+  .aboutWrapper .contentWrapper {
+    color: #F50006; }
+    .aboutWrapper .contentWrapper .blocText {
+      width: 43%;
+      display: flex;
+      float: left; }
+      .aboutWrapper .contentWrapper .blocText h1 {
+        font-family: Archivo;
+        font-weight: regular;
+        font-size: 86px;
+        padding: 30px;
+        letter-spacing: 14.66px; }
+    .aboutWrapper .contentWrapper p {
+      font-size: 30px;
+      padding-top: 2%;
+      font-family: Montserrat;
+      letter-spacing: 8.03px;
+      line-height: 52px;
+      width: 95%; }
+
+.projectWrapper {
+  width: 100%;
+  height: 100%; }
+  .projectWrapper .projectMask {
+    width: 100%;
+    height: 100%;
+    display: flex; }
+    .projectWrapper .projectMask img {
+      max-width: 40vw; }
+    .projectWrapper .projectMask .demoView {
+      position: absolute;
+      z-index: 0;
+      margin-top: 5%;
+      margin-left: 30px; }
+    .projectWrapper .projectMask .contentWrapper {
+      position: absolute;
+      right: 10%;
+      color: #EFB808; }
+      .projectWrapper .projectMask .contentWrapper p {
+        font-family: Montserrat;
+        letter-spacing: 13.36px;
+        line-height: 40px;
+        font-size: 20px; }
+        .projectWrapper .projectMask .contentWrapper p .boldTxt {
+          font-weight: bold; }
+    .projectWrapper .projectMask .blocText {
+      position: relative;
+      margin-top: 10%; }
+      .projectWrapper .projectMask .blocText .equal {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-family: Montserrat;
+        font-size: 30px; }
+      .projectWrapper .projectMask .blocText h1 {
+        font-size: 120px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 14.66px;
+        font-family: Archivo;
+        font-weight: regular; }
+        .projectWrapper .projectMask .blocText h1 span {
+          font-size: 30px;
+          letter-spacing: 13.66px;
+          font-family: Montserrat; }
+
+.contactWrapper {
+  width: 100%;
+  height: 100%;
+  color: #084C61; }
+  .contactWrapper .contactMask {
+    width: 100%;
+    height: 100%;
+    display: flex; }
+    .contactWrapper .contactMask .leftSide {
+      width: 55%;
+      height: 100%;
+      position: relative; }
+      .contactWrapper .contactMask .leftSide h1 {
+        font-family: Archivo;
+        font-weight: regular;
+        font-size: 200px;
+        letter-spacing: 25.21px; }
+      .contactWrapper .contactMask .leftSide .socialList {
+        color: #36151E; }
+        .contactWrapper .contactMask .leftSide .socialList span {
+          font-weight: bold; }
+      .contactWrapper .contactMask .leftSide p {
+        font-family: Montserrat;
+        font-weight: regular;
+        letter-spacing: 13.36px;
+        font-size: 30px;
+        width: 90%; }
+    .contactWrapper .contactMask .rightSide {
+      width: 45%;
+      height: 100%;
+      position: relative; }
+      .contactWrapper .contactMask .rightSide form {
+        width: 85%;
+        letter-spacing: 13.36px;
+        font-size: 20px;
+        position: absolute;
+        bottom: 25%;
+        font-family: Montserrat;
+        color: #36151E; }
+        .contactWrapper .contactMask .rightSide form input {
+          width: 100%;
+          border: none;
+          background-color: #deb88700;
+          border-bottom: 1px solid #084C61;
+          text-align: end;
+          letter-spacing: 13.36px;
+          height: 50px; }
+        .contactWrapper .contactMask .rightSide form textarea {
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          width: 100%;
+          height: 150px;
+          background-color: #00ffff00;
+          border: none;
+          border-bottom: 1px solid #084C61;
+          text-align: end;
+          letter-spacing: 13.36px; }
+
+.reviewWrapper {
+  width: 100%;
+  height: 100%; }
+  .reviewWrapper .reviewMask {
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=App.css.map */
