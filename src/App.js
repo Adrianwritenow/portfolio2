@@ -21,16 +21,16 @@ class App extends Component {
       <AnimatedBg>
 
         <Splash/>
-        <Transition height="100vh" from="#000000" to="#73F9E4" position={0.95}>
+        <Transition height="100vh" from="#000000" to="#12bfa4" position={0.95}>
             <About/>
         </Transition>
-        <Transition height="100vh" from="#73F9E4" to="#003C15" position={0.95}>
+        <Transition height="100vh" from="#12bfa4" to="#003C15" position={0.95}>
           <Review/>
         </Transition>
         <Transition height="100vh" from="#003C15" to="#CC1C05" position={0.95}>
           <Projects/>
         </Transition>
-        <Transition height="100vh" from="#CC1C05" to="#fff600" position={0.95}>
+        <Transition height="100vh" from="#CC1C05" to="#F9C809" position={0.95}>
           <Contact/>
         </Transition>
 
