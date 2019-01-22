@@ -451,9 +451,24 @@ line{stroke:#f2dede;stroke-width:2px}
 
 ////reviewMobile
 
-.reviewWrapper .reviewMask .all {
+.reviewWrapper .reviewMask {
+
+  span{
+    font-size: 25px!important;
+  }
+
+  .reviewBox{
+        letter-spacing: 6.03px!important;
+        font-size: 18px!important;
+
+  }
+
+  .all {
     top: 10%;
   }
+
+}
+
 
 
 /////ProjectsMobile

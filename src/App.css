@@ -315,6 +315,11 @@ line {
       font-weight: bold;
       line-height: 55px; }
 
+  .reviewWrapper .reviewMask span {
+    font-size: 25px !important; }
+  .reviewWrapper .reviewMask .reviewBox {
+    letter-spacing: 6.03px !important;
+    font-size: 18px !important; }
   .reviewWrapper .reviewMask .all {
     top: 10%; }
 
