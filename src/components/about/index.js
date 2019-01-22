@@ -17,7 +17,7 @@ class About extends Component {
 
 
     return (
-      <section>
+      <section className='pageSection'>
 
 
           <div className="aboutWrapper">
@@ -39,7 +39,9 @@ class About extends Component {
               </div>
             </div>
 
+
           </div>
+
       </section>
     );
   }

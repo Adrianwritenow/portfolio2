@@ -16,7 +16,7 @@ class Projects extends Component {
 
 
     return (
-      <section>
+      <section className='pageSection'>
         <div className="projectWrapper" >
         <div className='projectBg' style={background}></div>
           <div className='projectMask'>
@@ -39,7 +39,7 @@ class Projects extends Component {
                   <span className='boldTxt'>Year:</span>2018,<br/>
                   <span className='boldTxt'>Job:</span>UI/UX,<br/>
                   <span className='boldTxt'>Site:</span>foxtailcoffee.com,<br/>
-                  <span className='boldTxt'>Used:&#91;</span> .html,.css,.js
+                  <span className='boldTxt'>Used:&#91;</span>.html,.css,.js
                   <span className='boldTxt'>&#93;</span>
                   <span>&#125;</span>
                 </p>
@@ -47,7 +47,9 @@ class Projects extends Component {
             </div>
           </div>
 
+
         </div>
+
 
       </section>
     );

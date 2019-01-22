@@ -16,7 +16,7 @@ class Review extends Component {
 
 
     return (
-      <section>
+      <section className='pageSection'>
         <div className="reviewWrapper" >
         <div className='projectBg' style={background}></div>
 
@@ -46,7 +46,9 @@ class Review extends Component {
 
 
           </div>
+
         </div>
+
 
       </section>
     );

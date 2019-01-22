@@ -16,7 +16,7 @@ class Contact extends Component {
 
 
     return (
-      <section>
+      <section className='pageSection'>
         <div className="contactWrapper" >
         <div className='projectBg' style={background}></div>
 
@@ -47,7 +47,9 @@ class Contact extends Component {
 
 
           </div>
+
         </div>
+
 
       </section>
     );

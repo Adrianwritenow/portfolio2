@@ -16,22 +16,60 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+    const background = {
+      backgroundImage: 'url(images/pool_water.jpg)'
+    }
     return (
       <div className="App">
+
       <AnimatedBg>
 
         <Splash/>
-        <Transition height="100vh" from="#000000" to="#12bfa4" position={0.95}>
+
+
+        <Transition height="150vh" from="#000000" to="#12bfa4" position={0.95}>
+        <div className='buffer'>
+          <div className='projectBg' style={background}></div>
+            <div className='aboutMask'></div>
+        </div>
+
             <About/>
+
         </Transition>
-        <Transition height="100vh" from="#12bfa4" to="#003C15" position={0.95}>
+
+        <Transition height="150vh" from="#12bfa4" to="#003C15" position={0.95}>
+
+          <div className='buffer'>
+            <div className='projectBg' style={background}></div>
+              <div className='aboutMask'></div>
+          </div>
           <Review/>
+
+
         </Transition>
-        <Transition height="100vh" from="#003C15" to="#CC1C05" position={0.95}>
+
+        <Transition height="150vh" from="#003C15" to="#CC1C05" position={0.95}>
+          <div className='buffer'>
+            <div className='projectBg' style={background}></div>
+              <div className='aboutMask'></div>
+          </div>
+
+
+
           <Projects/>
+
+
         </Transition>
-        <Transition height="100vh" from="#CC1C05" to="#F9C809" position={0.95}>
+
+        <Transition height="150vh" from="#CC1C05" to="#F9C809" position={0.95}>
+          <div className='buffer'>
+            <div className='projectBg' style={background}></div>
+              <div className='aboutMask'></div>
+          </div>
           <Contact/>
+
+
         </Transition>
 
       </AnimatedBg>
