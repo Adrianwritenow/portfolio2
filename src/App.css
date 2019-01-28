@@ -151,7 +151,21 @@ line {
       font-family: Montserrat;
       letter-spacing: 8.03px;
       line-height: 52px;
-      width: 95%; }
+      width: 95%;
+      margin-left: 25px;
+      margin-right: 10px; }
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.carousel-control.left {
+  background-image: none; }
+
+.carousel-control.right {
+  background-image: none; }
 
 .projectWrapper {
   width: 100%;
@@ -162,15 +176,19 @@ line {
     display: flex;
     position: relative; }
     .projectWrapper .projectMask img {
-      max-width: 40vw; }
-    .projectWrapper .projectMask .demoView {
+      max-width: 40vw;
       position: absolute;
-      z-index: 0;
-      margin-top: 5%;
-      margin-left: 30px; }
-    .projectWrapper .projectMask .contentWrapper {
+      right: 5%; }
+    .projectWrapper .projectMask .demoView {
       position: relative;
+      margin-top: 5%;
+      margin-left: 30px;
       right: 10%;
+      width: 100vw;
+      height: 100vh; }
+    .projectWrapper .projectMask .contentWrapper {
+      position: absolute;
+      left: 5%;
       color: #EFB808; }
       .projectWrapper .projectMask .contentWrapper p {
         font-family: Montserrat;
@@ -302,7 +320,6 @@ line {
     padding-top: 2% !important;
     letter-spacing: 6.03px !important;
     line-height: 40px !important;
-    padding-left: 25px !important;
     padding-top: 65px !important;
     max-height: 100%; }
   .aboutWrapper .contentWrapper .blocText {
@@ -339,10 +356,14 @@ line {
         height: auto;
         width: 100vw; }
     .projectWrapper .projectMask img {
-      max-width: 40vh; }
+      max-width: 40vh;
+      position: absolute;
+      top: 33%;
+      left: 15%; }
     .projectWrapper .projectMask .demoView {
       top: 30%; }
     .projectWrapper .projectMask .contentWrapper {
+      position: relative;
       left: 0px; }
       .projectWrapper .projectMask .contentWrapper p {
         overflow: hidden;

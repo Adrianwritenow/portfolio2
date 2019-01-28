@@ -1,15 +1,15 @@
-export const about [
+export const about = [
   {
-    do:apps
+    skill:'apps'
   },
   {
-    do:sites
+    skill:'sites'
   },
   {
-    do:UI
+    skill:'UI'
   },
   {
-    do:UX
+    skill:'UX'
   },
 
-]
+];

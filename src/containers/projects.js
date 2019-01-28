@@ -1,4 +1,4 @@
-export const projects[
+export const projects = [
   {
   firstName:'Foxtail',
   lastName:'Coffee',
@@ -18,4 +18,4 @@ export const projects[
   anchor:'viewstub.com',
   used:['.php','.html','.css','.js']
 }
-]
+];

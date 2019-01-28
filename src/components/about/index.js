@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { AnimatedBg, Transition } from 'scroll-background';
+import {about} from '../../containers/about.js';
+import { Carousel } from 'react-bootstrap';
+
+
 
 import '../../App.css';
 
@@ -8,11 +12,41 @@ import '../../App.css';
 
 class About extends Component {
 
+  constructor(props, context) {
+    super(props, context);
+
+    this.aboutWrap = this.aboutWrap.bind(this);
+
+    this.state = {
+      index: 0,
+      direction: null,
+      about: about[0]
+    };
+  }
+
+  aboutWrap(selectedIndex) {
+
+  }
+
+  componentDidMount(){
+    // setInterval(this.aboutWrap, 2000);
+    // store intervalId in the state so it can be accessed later:
+  }
+
+
+
+
+
 
   render() {
     const background = {
       backgroundImage: 'url(images/pool_water.jpg)'
     }
+
+    const { index, direction } = this.state;
+
+    let aboutState = this.state.about ;
+    console.log('?',aboutState);
 
 
 
@@ -26,7 +60,12 @@ class About extends Component {
             <div className='aboutMask'>
               <div className="contentWrapper">
                 <div className='blocText'>
-                  <h1>I desgin and build &#123;apps&#125;</h1>
+                  <h1>I desgin and build &#123;
+
+                    {aboutState.skill}
+                    &#125;
+
+                </h1>
                 </div>
                   <p>Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit, sed do eiusmod tempor incididunt
